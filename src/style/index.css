@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'FunnelDisplay';
+	src: url('/assets/fonts/FunnelDisplay.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--background-color: #18181b;
+	--text-color: #fafafa;
+	--link-color: lightblue;
+}
+
+/* :root {
+	--background-color: #fafafa;
+	--text-color: #09090b;
+	--link-color: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-color: #18181b;
+		--text-color: #fafafa;
+		--link-color: lightblue;
+	}
+} */
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: 'FunnelDisplay', sans-serif;
+	min-height: 100vh;
+	overflow-y: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+#app {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+
+.centerContainer {
+	display: grid;
+	place-items: center;
+}

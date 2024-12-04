@@ -1,0 +1,55 @@
+:root {
+    --plane-color: #1e1e20;
+}
+
+/* :root {
+	--plane-color: #e4e4e7;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--plane-color: #1e1e20;
+	}
+} */
+
+
+.planesBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+    perspective: 1000px;
+    /* Add 3D perspective */
+}
+
+.plane {
+    position: absolute;
+    background-color: var(--plane-color);
+    border-radius: 0.25rem;
+    transform-style: preserve-3d;
+    animation: flyUp 10s linear infinite, appear 1s forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flyUp {
+    0% {
+        bottom: -100px;
+    }
+
+    100% {
+        bottom: calc(100% + 300px);
+    }
+}
