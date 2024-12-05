@@ -25,14 +25,11 @@
     "@capacitor/cli": "^6.2.0",
     "@capacitor/core": "^6.2.0",
     "@capacitor/filesystem": "^6.0.2",
-    "@tensorflow/tfjs": "^4.22.0",
-    "@tensorflow/tfjs-backend-wasm": "^4.22.0",
     "decimal.js": "^10.4.3",
     "mathjs": "^14.0.0",
     "preact": "^10.10.0",
     "preact-render-to-string": "^5.2.1",
-    "preact-router": "^3.2.1",
-    "vis-network": "^9.1.9"
+    "preact-router": "^3.2.1"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.12",

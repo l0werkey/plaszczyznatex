@@ -6,7 +6,6 @@ import SuccessState from './states/SuccessState';
 
 const StateSelector = () => {
 	const context = useContext(StateContext);
-	console.log(context)
 
 	switch (context.state) {
 		case "main":
@@ -24,18 +23,18 @@ const App = () => {
 	const [fileName, setFileName] = useState<string>("");
 
     const value: StateContextValue = {
-        state: state,
+        state,
         setState: (state) => {
             setState(state);
         },
-        data: data,
+        data,
         setData: (data) => {
             setData(data);
         },
-		fileName,
-		setFileName: (fileName) => {
-			setFileName(fileName);
-		}
+    		fileName,
+    		setFileName: (fileName) => {
+   			setFileName(fileName);
+    		}
     };
 	
 	return <div id="app">

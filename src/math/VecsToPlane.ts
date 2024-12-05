@@ -58,8 +58,6 @@ export default class PlaneSolver {
             paramsArray[2][0].toNumber(), // Intercept
         ] as PlaneParams;
 
-        console.log('Plane Parameters:', this.planeParams);
-
         // Determine the range of x and y for creating the plane vertices
         const xRange = [Math.min(...this.vecs.map((v) => v[0])), Math.max(...this.vecs.map((v) => v[0]))];
         const yRange = [Math.min(...this.vecs.map((v) => v[1])), Math.max(...this.vecs.map((v) => v[1]))];
